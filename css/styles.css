@@ -337,29 +337,7 @@ span {
     border-radius: 0px 0px 4px 4px;
 }
 
-.social {
-    display: flex;
-    justify-content: center;
-    column-gap: 16px;
-    margin-top: 8px;
-}
 
-.social-list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #4D5AE5;
-
-}
-
-.social-list-icon {
-    width: 16px;
-    height: 16px;
-    fill: #111111;
-}
 
 /*  ============== /Our Team ============== */
 
@@ -503,3 +481,34 @@ span {
 }
 
 /* ============== /Contacts ============== */
+
+/* ============== /SOCIAL ICON ============== */
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    margin-top: 8px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+}
+
+.social-list-icon {
+    width: 16px;
+    height: 16px;
+    fill: #F4F4FD;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: #31D0AA;
+}
+
+/* ============== /SOCIAL ICON ============== */
