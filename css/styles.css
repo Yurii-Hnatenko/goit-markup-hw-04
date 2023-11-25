@@ -6,15 +6,15 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 ul,
 ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 img {
@@ -25,23 +25,21 @@ img {
 .list {
     list-style-type: none;
 }
-  /* Властивості тексту */
+
+/* Властивості тексту */
 .link {
     text-decoration: none;
 }
-  
+
 button {
     cursor: pointer;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #FFFFFF;
 }
-
-/* .accent-color { */
-    /* color: #fd9222; */
-/* } */
 
 .section-title {
     font-size: 24px;
@@ -52,6 +50,7 @@ body {
     text-transform: uppercase;
     color: #111111;
 }
+
 /* Приховуваний елемент */
 .visually-hidden {
     position: absolute;
@@ -60,13 +59,13 @@ body {
     margin: -1px;
     border: 0;
     padding: 0;
-  
+
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-  
+
 .container {
     width: 1158px;
     margin-left: auto;
@@ -74,101 +73,138 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-  
+
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-/* ============== /COMMON STYLES ============== */  
+
+/* ============== /COMMON STYLES ============== */
 
 /* ============== HEADER ============== */
 .page-navigation {
     display: flex;
     align-items: center;
 }
+
 .page-heder {
     border-bottom: 1px solid #e7e9fc;
 }
+
 .page-navigation-heder {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .menu-link:hover,
 .menu-link:focus,
 .connect-link:hover,
 .connect-link:focus {
     color: #404BBF;
 }
+
 .button-connect:hover,
 .button-connect:focus {
     background-color: #404BBF;
 }
+
+.menu-item-decor:hover::after {
+    display: block;
+    width: 48px;
+    height: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    border-radius: 2px;
+    background-color: #404BBF;
+    content: '';
+}
+
+.menu-item-decor {
+    position: relative;
+}
+
 .logo {
-    color:  #4d5ae5;
+    color: #4d5ae5;
     font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 1.17; /* 116.667% */
-    letter-spacing: 0.03em; 
+    line-height: 1.17;
+    /* 116.667% */
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
 }
+
 span {
     color: #2e2f42;
 }
+
 .menu-link {
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.5; /* 150% */
+    line-height: 1.5;
+    /* 150% */
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
 
 .menu {
-   display: flex;
-   gap: 40px;
+    display: flex;
+    gap: 40px;
 }
 
 .connect-link {
-    color:  #434455;
+    color: #434455;
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.5; /* 150% */
+    line-height: 1.5;
+    /* 150% */
     letter-spacing: 0.02em;
     font-style: normal;
     gap: 40px;
-}   
+}
+
 .connect {
     font-style: normal;
 }
+
 /* ============== /HEADER ============== */
 
 /* ============== MOTTO ============== */
 .size-section {
-    background:  #2E2F42;
     height: 600px;
     padding-top: 188px;
     padding-bottom: 188px;
+    background: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)),
+        url(/images/baskground/people-office.jpg);
+    background-size: cover;
 }
+
 .main-title {
-    color:  #ffffff;
+    color: #ffffff;
     text-align: center;
     font-size: 56px;
     font-weight: 700;
-    line-height: 1.07; /* 107.143% */
+    line-height: 1.07;
+    /* 107.143% */
     letter-spacing: 0.02em;
     max-width: 496px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 }
+
 .button-connect {
-    background:  #4D5AE5;
+    background: #4D5AE5;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.04em;
     color: #ffffff;
@@ -179,9 +215,10 @@ span {
     border: none;
     border-radius: 4px;
     display: block;
-    
-    
+
+
 }
+
 /* ============== /MOTTO ============== */
 
 /* ============== BENEFITS ============== */
@@ -190,33 +227,59 @@ span {
     flex-wrap: wrap;
     gap: 24px;
 }
+
 .container-benefits {
-    width: calc(( 100% - 72px ) / 4);   
+    width: calc((100% - 72px) / 4);
 }
+
 .title-section-benefits {
     padding: 120px 0;
 }
+
 .benefits-title {
-    color:  #2E2F42;
+    color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.2; /* 120% */
+    line-height: 1.2;
+    /* 120% */
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    
+    margin-top: 8px;
+
 }
+
+.container-icons-decor {
+    display: block;
+    width: 264px;
+    height: 112px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+
+}
+
+.icons-decor {
+    width: 64px;
+    height: 64px;
+    margin: 24px 100px;
+    bottom: 0;
+    fill: #111111;
+
+}
+
 .benefits-content {
-    color:  #434455;
+    color: #434455;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.5; /* 150% */
+    line-height: 1.5;
+    /* 150% */
     letter-spacing: 0.02em;
 
 }
+
 /* ============== /BENEFITS ============== */
 
 /*  ============== Our Team ============== */
-.photo-container{
+.photo-container {
     padding: 32px 0;
 }
 
@@ -225,6 +288,7 @@ span {
     flex-wrap: wrap;
     gap: 24px;
 }
+
 .section-team {
     background-color: #F4F4FD;
     padding-top: 120px;
@@ -233,54 +297,88 @@ span {
 }
 
 .title-section-team {
-    color:  #2E2F42;
+    color: #2E2F42;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.11; /* 111.111% */
+    line-height: 1.11;
+    /* 111.111% */
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
 }
+
 .photo-title {
-    color:  #2E2F42;
+    color: #2E2F42;
     text-align: center;
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.2; /* 120% */
+    line-height: 1.2;
+    /* 120% */
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 8px
 }
+
 .photo-content {
-    color:  #434455;
+    color: #434455;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.5; /* 150% */
+    line-height: 1.5;
+    /* 150% */
     letter-spacing: 0.02em;
     text-align: center;
 }
+
 .list-team {
     background-color: #FFFFFF;
-    width: calc(( 100% - 72px ) / 4);
+    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    margin-top: 8px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+
+}
+
+.social-list-icon {
+    width: 16px;
+    height: 16px;
+    fill: #111111;
+}
+
 /*  ============== /Our Team ============== */
 
-/* Portfolio */
+/* ============== Portfolio ============== */
 .page-portfolio {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
-    border-top: none; 
+    border-top: none;
 }
+
 .portfolio-section {
-    padding-top: 120px; 
+    padding-top: 120px;
     padding-bottom: 120px;
 }
+
 .list-photo {
-    width: calc(( 100% - 48px ) / 3);
+    width: calc((100% - 48px) / 3);
 }
+
 .container-photo {
     display: flex;
     flex-wrap: wrap;
@@ -289,55 +387,119 @@ span {
 }
 
 .title-section-portfolio {
-    color:  #2E2F42;
+    color: #2E2F42;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.11; /* 111.111% */
+    line-height: 1.11;
+    /* 111.111% */
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
 }
+
 .title-portfolio {
-    color:  #2E2F42;
+    color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.2; /* 120% */
+    line-height: 1.2;
+    /* 120% */
     letter-spacing: 0.02em;
     margin-bottom: 8px;
 }
+
 .content-portfolio {
-    color:  #434455;
+    color: #434455;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.5; /* 150% */
+    line-height: 1.5;
+    /* 150% */
     letter-spacing: 0.02em;
 }
-/* Contacts */
-.page-footer {
-    background:  #2E2F42;
-    padding: 100px 0; 
+
+.page-overlay {
+    position: relative;
+    overflow: hidden;
 }
+
+.overlay-content {
+    position: absolute;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.02em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    padding: 40px 32px;
+    overflow: auto;
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    transition: transform 250ms linear;
+}
+
+.page-overlay:hover .overlay-content {
+    transform: translateY(0%);
+
+}
+
+/* ============== /Portfolio ============== */
+
+/* ============== Contacts ============== */
+.page-footer {
+    background: #2E2F42;
+    padding: 100px 0;
+}
+
 .logo-footer {
-    color:  #4d5ae5;
+    color: #4d5ae5;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 1.17; /* 116.667% */
+    line-height: 1.17;
+    /* 116.667% */
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 16px;
 }
+
 .content-footer {
-    color:  #F4F4FD;
+    color: #F4F4FD;
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.5; /* 150% */
+    line-height: 1.5;
+    /* 150% */
     letter-spacing: 0.02em;
     max-width: 264px;
+    margin-right: 120px;
 }
+
 .logo-span {
     color: #f4f4fd;
 }
+
+.content {
+    align-items: center;
+}
+
+.list-footer {
+    display: flex;
+}
+
+.elements-footer p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.02em;
+    color: #FFF;
+}
+
+/* ============== /Contacts ============== */
