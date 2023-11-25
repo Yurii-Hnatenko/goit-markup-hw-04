@@ -89,6 +89,9 @@ body {
 
 .page-heder {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-navigation-heder {
@@ -113,12 +116,13 @@ body {
     display: block;
     width: 48px;
     height: 4px;
-    left: 50%;
+    left: 0;
+    /* left: 50%; */
     transform: translateX(-50%);
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     border-radius: 2px;
-    background-color: #404BBF;
+    background-color: #404bbf;
     content: '';
 }
 
@@ -151,7 +155,8 @@ span {
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu {
@@ -169,6 +174,7 @@ span {
     letter-spacing: 0.02em;
     font-style: normal;
     gap: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .connect {
@@ -179,6 +185,7 @@ span {
 
 /* ============== MOTTO ============== */
 .size-section {
+    max-width: 1440px;
     height: 600px;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -187,6 +194,8 @@ span {
             rgba(46, 47, 66, 0.70)),
         url(/images/baskground/people-office.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main-title {
@@ -215,8 +224,7 @@ span {
     border: none;
     border-radius: 4px;
     display: block;
-
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ============== /MOTTO ============== */
@@ -249,11 +257,15 @@ span {
 }
 
 .container-icons-decor {
-    display: block;
+    display: flex;
     width: 264px;
     height: 112px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
 
 }
 
@@ -335,6 +347,9 @@ span {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -346,6 +361,7 @@ span {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-section {
@@ -355,6 +371,10 @@ span {
 
 .list-photo {
     width: calc((100% - 48px) / 3);
+}
+
+.photo-portfolio:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .container-photo {
@@ -400,30 +420,35 @@ span {
     overflow: hidden;
 }
 
-.overlay-content {
+/* .overlay-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: auto;
+} */
+
+.overlay-text {
     position: absolute;
+    padding: 40px 32px;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    top: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.02em;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    padding: 40px 32px;
-    overflow: auto;
-    background-color: #4D5AE5;
     color: #F4F4FD;
-    transition: transform 250ms linear;
+    background-color: #4D5AE5;
 }
 
-.page-overlay:hover .overlay-content {
+.list-photo:hover p {
     transform: translateY(0%);
-
 }
+
 
 /* ============== /Portfolio ============== */
 
@@ -466,18 +491,28 @@ span {
     align-items: center;
 }
 
+.conteiner-ligo {
+    margin-right: 120px
+}
+
 .list-footer {
     display: flex;
 }
 
-.elements-footer p {
+.conteiner-footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.page-social {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.02em;
-    color: #FFF;
+    margin-bottom: 16px;
+    color: #FFFFFF;
 }
 
 /* ============== /Contacts ============== */
@@ -497,18 +532,19 @@ span {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #4D5AE5;
+    background-color: #31D0AA;
 }
 
 .social-list-icon {
     width: 16px;
     height: 16px;
     fill: #F4F4FD;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
-    background-color: #31D0AA;
+    background-color: #404bbf;
 }
 
 /* ============== /SOCIAL ICON ============== */
