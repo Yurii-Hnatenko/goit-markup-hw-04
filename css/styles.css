@@ -112,22 +112,22 @@ body {
     background-color: #404BBF;
 }
 
+.menu-item {
+    position: relative;
+}
+
 .menu-item-decor:hover::after {
     display: block;
     width: 48px;
     height: 4px;
     left: 0;
-    /* left: 50%; */
-    transform: translateX(-50%);
     position: absolute;
     bottom: -1px;
     border-radius: 2px;
     background-color: #404bbf;
     content: '';
-}
-
-.menu-item-decor {
-    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .logo {
