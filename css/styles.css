@@ -116,12 +116,12 @@ body {
     position: relative;
 }
 
-.menu-item-decor::after {
+.menu-item-decor:hover::after {
     content: '';
+    left: 0;
     display: block;
     width: 48px;
     height: 4px;
-    left: 0;
     position: absolute;
     bottom: -1px;
     border-radius: 2px;
@@ -519,11 +519,13 @@ span {
     letter-spacing: 0.02em;
     margin-bottom: 16px;
     color: #FFFFFF;
-
-    .list-footer {
-        gap: 16px;
-    }
 }
+
+.list-footer {
+    gap: 16px;
+}
+
+
 
 /* ============== /Contacts ============== */
 
@@ -542,7 +544,7 @@ span {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #4d5ae5;
+    background-color: #404bbf;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -555,6 +557,11 @@ span {
 
 .social-list-link:hover,
 .social-list-link:focus {
+    background-color: #404bbf;
+}
+
+.list-footer-link:hover,
+.list-footer-link:focus {
     background-color: #31d0aa;
 }
 
