@@ -558,6 +558,7 @@ span {
 .social-list-link:hover,
 .social-list-link:focus {
     background-color: #404bbf;
+    ;
 }
 
 .list-footer-link:hover,
