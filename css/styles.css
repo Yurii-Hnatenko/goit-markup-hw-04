@@ -116,9 +116,6 @@ body {
     position: relative;
 }
 
-
-
-
 .logo {
     color: #4d5ae5;
     font-family: Raleway, sans-serif;
@@ -144,7 +141,7 @@ span {
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.02em;
-    color: #404bbf;
+    color: #2E2F42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -170,6 +167,10 @@ span {
     font-style: normal;
 }
 
+.menu-item-decor {
+    color: #404bbf;
+}
+
 .menu-item-decor::after {
     content: '';
     display: block;
@@ -193,10 +194,12 @@ span {
     background: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70),
             rgba(46, 47, 66, 0.70)),
-        url(/images/baskground/people-office.jpg);
+        url(../images/baskground/people-office.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-title {
@@ -254,7 +257,6 @@ span {
     letter-spacing: 0.02em;
     margin-bottom: 8px;
     margin-top: 8px;
-
 }
 
 .container-icons-decor {
@@ -267,7 +269,6 @@ span {
     justify-content: center;
     background-color: #f4f4fd;
     margin-bottom: 8px;
-
 }
 
 .icons-decor {
@@ -276,7 +277,6 @@ span {
     margin: 24px 100px;
     bottom: 0;
     fill: #111111;
-
 }
 
 .benefits-content {
@@ -286,7 +286,6 @@ span {
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.02em;
-
 }
 
 /* ============== /BENEFITS ============== */
@@ -299,7 +298,7 @@ span {
 .list-container-team {
     display: flex;
     flex-wrap: wrap;
-
+    gap: 24px;
 }
 
 .section-team {
@@ -374,7 +373,6 @@ span {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .container-photo {
     display: flex;
     flex-wrap: wrap;
@@ -419,7 +417,6 @@ span {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-
 .overlay-text {
     position: absolute;
     padding: 40px 32px;
@@ -445,7 +442,6 @@ span {
 .list-photo:hover p {
     transform: translateY(0%);
 }
-
 
 /* ============== /Portfolio ============== */
 
@@ -488,10 +484,6 @@ span {
     align-items: center;
 }
 
-.conteiner-ligo {
-    margin-right: 120px
-}
-
 .list-footer {
     display: flex;
 }
@@ -516,8 +508,6 @@ span {
     gap: 16px;
 }
 
-
-
 /* ============== /Contacts ============== */
 
 /* ============== /SOCIAL ICON ============== */
@@ -540,20 +530,18 @@ span {
 }
 
 .social-list-icon {
-    width: 16px;
-    height: 16px;
     fill: #F4F4FD;
 
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
-    background-color: #31d0aa;
+    background-color: #404BBF;
 }
 
 .list-footer-link:hover,
 .list-footer-link:focus {
-    background-color: #31d0aa;
+    background-color: #31D0AA;
 }
 
 .social-team {
