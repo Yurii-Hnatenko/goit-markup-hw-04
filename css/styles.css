@@ -117,12 +117,12 @@ body {
 }
 
 .menu-item-decor::after {
-    left: 0;
     content: '';
     display: block;
     width: 48px;
     height: 4px;
     position: absolute;
+    left: 0;
     bottom: -1px;
     border-radius: 2px;
     background-color: #404bbf;
@@ -357,10 +357,6 @@ span {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.social-team {
-    gap: 24px;
-}
-
 
 /*  ============== /Our Team ============== */
 
@@ -537,6 +533,7 @@ span {
 }
 
 .social-list-link {
+    gap: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
