@@ -117,8 +117,8 @@ body {
 }
 
 .menu-item-decor::after {
-    content: '';
     left: 0;
+    content: '';
     display: block;
     width: 48px;
     height: 4px;
