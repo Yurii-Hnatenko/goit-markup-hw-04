@@ -180,8 +180,6 @@ span {
     bottom: -1px;
     border-radius: 2px;
     background-color: #404bbf;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 /* ============== /HEADER ============== */
