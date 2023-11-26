@@ -473,6 +473,9 @@ span {
     /* 150% */
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+
+.conteiner-logo {
     margin-right: 120px;
 }
 
