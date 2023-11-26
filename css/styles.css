@@ -116,23 +116,7 @@ body {
     position: relative;
 }
 
-.menu-item-decor::after {
-    content: '';
-    display: block;
-    width: 48px;
-    height: 4px;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    border-radius: 2px;
-    background-color: #404bbf;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-.menu-item-decor {
-    left: 0;
-}
 
 
 .logo {
@@ -184,6 +168,20 @@ span {
 
 .connect {
     font-style: normal;
+}
+
+.menu-item-decor::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+    background-color: #404bbf;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* ============== /HEADER ============== */
@@ -533,7 +531,6 @@ span {
 }
 
 .social-list-link {
-    gap: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -560,6 +557,10 @@ span {
 .list-footer-link:hover,
 .list-footer-link:focus {
     background-color: #31d0aa;
+}
+
+.social-team {
+    gap: 24px;
 }
 
 /* ============== /SOCIAL ICON ============== */
