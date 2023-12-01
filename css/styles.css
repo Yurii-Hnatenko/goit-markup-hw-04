@@ -599,14 +599,13 @@ span {
     background-color: transparent;
     border: none;
     line-height: 0;
-    stroke: #111111;
+    fill: #111111;
     transition: stroke 250ms linear;
     border: 1px solid #E7E9FC;
     border-radius: 50%;
     transition: background-color 250ms linear, fill 250ms linear;
 
 }
-
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
