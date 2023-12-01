@@ -558,7 +558,8 @@ span {
 }
 
 .feedback-form {
-    display: inline-flex;
+    display: flex;
+    gap: 24px;
 }
 
 .feedback-footer-content {
@@ -567,6 +568,7 @@ span {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    margin-bottom: 16px;
 }
 
 .feedback-foorm-imput {
@@ -576,7 +578,11 @@ span {
     border-radius: 4px;
     background-color: transparent;
     border: 1px solid #FFFFFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     margin-top: 16px;
     margin-right: 24px;
     padding: 8px 16px;
@@ -584,7 +590,7 @@ span {
 }
 
 .feedback-foorm-imput::placeholder {
-    color: #FFF;
+    color: #FFFFFF;
     font-size: 12px;
     font-weight: 400;
     line-height: 2;
@@ -594,7 +600,9 @@ span {
 .feedback-form-button {
     display: inline-flex;
     align-self: flex-end;
-    width: 165px;
+    justify-content: center;
+    align-items: center;
+    min-width: 165px;
     height: 40px;
     border: none;
     border-radius: 4px;
@@ -664,7 +672,6 @@ span {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     position: absolute;
     top: 24px;
     right: 24px;
@@ -675,8 +682,6 @@ span {
     transition: stroke 250ms linear;
     border: 1px solid #E7E9FC;
     border-radius: 50%;
-
-
 }
 
 .modal-close-btn:hover,
@@ -702,7 +707,7 @@ span {
 }
 
 .review-form-field-wrapper {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .review-form-field-label {
