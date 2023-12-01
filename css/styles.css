@@ -470,7 +470,6 @@ span {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    /* 150% */
     letter-spacing: 0.02em;
     max-width: 264px;
 }
@@ -534,7 +533,6 @@ span {
 
 .social-list-icon {
     fill: #F4F4FD;
-
 }
 
 .social-list-link:hover,
@@ -553,6 +551,7 @@ span {
 
 /* ============== /SOCIAL ICON ============== */
 
+/* ============== FEEDBACK FOOTER ============== */
 
 .feedback-footer {
     margin-left: 80px;
@@ -615,6 +614,8 @@ span {
     fill: #FFFFFF;
     margin-left: 16px;
 }
+
+/* ============== /FEEDBACK FOOTER ============== */
 
 /* ============== BACKDROP STYLES ============== */
 .backdrop {
