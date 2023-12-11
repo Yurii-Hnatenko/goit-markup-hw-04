@@ -41,6 +41,16 @@ body {
     background-color: #FFFFFF;
 }
 
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #111111;
+}
+
 /* Приховуваний елемент */
 .visually-hidden {
     position: absolute;
@@ -57,37 +67,24 @@ body {
 }
 
 .container {
-    max-width: 318px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-
-/* ============== HEDER STYLE ============== */
-.menu {
-    display: none;
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.page-navigation-heder {
+/* ============== /COMMON STYLES ============== */
+
+/* ============== HEADER ============== */
+.page-navigation {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    color: #4d5ae5;
-    font-family: Raleway, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-span {
-    color: #2e2f42;
 }
 
 .page-heder {
@@ -95,6 +92,12 @@ span {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.page-navigation-heder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu-link:hover,
@@ -109,17 +112,43 @@ span {
     background-color: #404BBF;
 }
 
+
+
+.logo {
+    color: #4d5ae5;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 76px;
+}
+
+span {
+    color: #2e2f42;
+}
+
+.menu-link {
+    position: relative;
+}
+
 .menu-link {
     display: block;
-    position: relative;
     padding-top: 24px;
     padding-bottom: 24px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    /* 150% */
     letter-spacing: 0.02em;
     color: #2E2F42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
 }
 
 .connect-link {
@@ -155,139 +184,13 @@ span {
     background-color: #404bbf;
 }
 
-@media screen and (max-width: 767px) {
-
-    /* ============== MOBILE HEDER STYLE ============== */
-    .mobile-menu-open-btn {
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        fill: #111111;
-        line-height: 0;
-        margin-left: auto;
-    }
-
-    .size-section {
-        max-width: 320px;
-        height: 432px;
-    }
-
-    .page-heder {
-        padding-top: 17.5px;
-        padding-bottom: 17.5px;
-    }
-
-    /*====== MOBIL MENU ======*/
-    .mobile-menu-wrapper {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 99999999;
-        width: 100%;
-        height: 100%;
-        background-color: #FFFFFF;
-        transform: translateX(100%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .mobile-menu-wrapper.is-open {
-        transform: translateX(0%);
-    }
-
-    .mobile-menu-close-btn {
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        background-color: #e7e9fc;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        padding: 0;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        top: 24px;
-        right: 24px;
-        width: 24px;
-        height: 24px;
-        line-height: 0;
-        stroke: #111111;
-        border-radius: 50%;
-    }
-
-    .modal-close-btn {
-        display: flex;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        background-color: #e7e9fc;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        padding: 0;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        top: 24px;
-        right: 24px;
-        width: 24px;
-        height: 24px;
-        line-height: 0;
-        stroke: #111111;
-        border-radius: 50%;
-    }
-
-    .modal-close-btn:hover,
-    .modal-close-btn:focus {
-        fill: #FFFFFF;
-        background-color: #404BBF;
-        border: none;
-    }
-
-    .mobile-menu-navigation {
-        padding-top: 72px;
-        padding-right: 153px;
-        padding-left: 16px;
-        padding-bottom: 168px;
-    }
-
-
-    .mobile-menu li:not(:last-child) {
-        margin-bottom: 40px;
-    }
-
-    .mobile-menu-link {
-        color: #2E2F42;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.1;
-        letter-spacing: 0.02em;
-
-    }
-
-    .mobile-menu-link:focus {
-        color: #404BBF;
-    }
-
-    .mobile-connect {
-        margin-left: 16px;
-    }
-
-    .mobile-connect li:not(:last-child) {
-        margin-bottom: 24px;
-    }
-
-    .mobile-connect-link {
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
-
-    .mobile-connect-link:focus {
-        color: #4D5AE5;
-    }
-}
-
-/* ============== /MOBILE HEDER STYLE ============== */
+/* ============== /HEADER ============== */
 
 /* ============== MOTTO ============== */
 .size-section {
-    padding-top: 72px;
+    max-width: 1440px;
+    height: 600px;
+    padding-top: 188px;
     padding-bottom: 188px;
     background: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70),
@@ -303,14 +206,15 @@ span {
 .main-title {
     color: #ffffff;
     text-align: center;
-    font-size: 36px;
+    font-size: 56px;
     font-weight: 700;
-    line-height: 1.11;
+    line-height: 1.07;
+    /* 107.143% */
     letter-spacing: 0.02em;
-    max-width: 200px;
+    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 72px;
+    margin-bottom: 48px;
 }
 
 .button-connect {
@@ -334,24 +238,24 @@ span {
 .page-content {
     display: flex;
     flex-wrap: wrap;
+    gap: 24px;
 }
 
-.page-content li:not(:last-child) {
-    margin-bottom: 72px;
+.container-benefits {
+    width: calc((100% - 72px) / 4);
 }
 
 .title-section-benefits {
-    padding: 96px 0;
+    padding: 120px 0;
 }
 
 .benefits-title {
-    text-align: center;
     color: #2E2F42;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.1;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    /* 120% */
     letter-spacing: 0.02em;
-    text-transform: capitalize;
     margin-bottom: 8px;
     margin-top: 8px;
 }
@@ -366,8 +270,6 @@ span {
     justify-content: center;
     background-color: #f4f4fd;
     margin-bottom: 8px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .icons-decor {
@@ -381,8 +283,9 @@ span {
 .benefits-content {
     color: #434455;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5;
+    /* 150% */
     letter-spacing: 0.02em;
 }
 
@@ -393,15 +296,17 @@ span {
     padding: 32px 0;
 }
 
-.section-team {
-    background-color: #F4F4FD;
-    padding-top: 96px;
-    padding-bottom: 96px;
+.list-container-team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
-.photo-team {
-    margin-left: auto;
-    margin-right: auto;
+.section-team {
+    background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
 }
 
 .title-section-team {
@@ -410,6 +315,7 @@ span {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
+    /* 111.111% */
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
@@ -421,6 +327,7 @@ span {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+    /* 120% */
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 8px
@@ -432,48 +339,46 @@ span {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+    /* 150% */
     letter-spacing: 0.02em;
     text-align: center;
 }
 
-.list-container-team>li:not(:last-child) {
-    margin-bottom: 72px;
-}
-
-.social-list {
-    margin-bottom: 0;
-}
-
 .list-team {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+
 /*  ============== /Our Team ============== */
 
 /* ============== Portfolio ============== */
 .page-portfolio {
     padding: 32px 16px;
-    border: 1px solid #F4F4FD;
+    border: 1px solid #e7e9fc;
     border-top: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-section {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .list-photo {
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container-photo li:not(:last-child) {
-    margin-bottom: 48px;
+.container-photo {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .title-section-portfolio {
@@ -482,6 +387,7 @@ span {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
+    /* 111.111% */
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
@@ -492,6 +398,7 @@ span {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+    /* 120% */
     letter-spacing: 0.02em;
     margin-bottom: 8px;
 }
@@ -501,6 +408,7 @@ span {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+    /* 150% */
     letter-spacing: 0.02em;
 }
 
@@ -541,21 +449,20 @@ span {
 /* ============== Contacts ============== */
 .page-footer {
     background: #2E2F42;
-    padding: 96px 0;
+    padding: 100px 0;
 }
 
 .logo-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
+    /* 116.667% */
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 17.5px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .content-footer {
@@ -566,7 +473,10 @@ span {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    margin-bottom: 72px;
+}
+
+.conteiner-logo {
+    margin-right: 120px;
 }
 
 .logo-span {
@@ -581,12 +491,17 @@ span {
     display: flex;
 }
 
+.conteiner-footer {
+    display: flex;
+    align-items: baseline;
+}
+
 .page-social {
-    text-align: center;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
+    /* 150% */
     letter-spacing: 0.02em;
     margin-bottom: 16px;
     color: #FFFFFF;
@@ -596,19 +511,56 @@ span {
     gap: 16px;
 }
 
+/* ============== /Contacts ============== */
+
+/* ============== /SOCIAL ICON ============== */
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    margin-top: 8px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-icon {
+    fill: #F4F4FD;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: #404BBF;
+}
+
+.list-footer-link:hover,
+.list-footer-link:focus {
+    background-color: #31D0AA;
+}
+
+.social-team {
+    gap: 24px;
+}
+
+/* ============== /SOCIAL ICON ============== */
+
 /* ============== FEEDBACK FOOTER ============== */
 
-
 .feedback-footer {
-    text-align: center;
+    margin-left: 80px;
 }
 
-.footer-cocial-feedback {
-    margin-bottom: 72px;
-}
-
-.feedback-form-button {
-    margin-top: 16px;
+.feedback-form {
+    display: flex;
+    gap: 24px;
 }
 
 .feedback-footer-content {
@@ -633,8 +585,7 @@ span {
     color: #ffffff;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     margin-top: 16px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 24px;
     padding: 8px 16px;
     outline: 0px solid transparent;
 }
@@ -673,73 +624,7 @@ span {
     margin-left: 16px;
 }
 
-
-
 /* ============== /FEEDBACK FOOTER ============== */
-
-/* ============== /Contacts ============== */
-
-
-
-
-/* ============== /TABLET HEDER STYLE ============== */
-
-
-
-
-
-/* ============== /COMMON STYLES ============== */
-
-/* ============== HEADER ============== */
-
-/* ============== SOCIAL ICON MOBIL MENU ============== */
-.menu-social {
-    display: flex;
-    justify-content: center;
-    column-gap: 15%;
-}
-
-.content-social-icon {
-    display: flex;
-    justify-content: center;
-    column-gap: 16px;
-    margin-top: 8px;
-}
-
-.mobil-social-list {
-    margin: 48px 16px 40px 16px;
-}
-
-.social-list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #4d5ae5;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-list-icon {
-    fill: #F4F4FD;
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-    background-color: #404BBF;
-}
-
-.list-footer-link:hover,
-.list-footer-link:focus {
-    background-color: #31D0AA;
-}
-
-.social-team {
-    gap: 24px;
-}
-
-/* ============== /SOCIAL ICON MOBIL MENU ============== */
 
 /* ============== BACKDROP STYLES ============== */
 .backdrop {
@@ -765,14 +650,14 @@ span {
 
 /* ============== /BACKDROP STYLES ============== */
 
-/* ============== /MOODAL STYLES MOBIL ============== */
+/* ============== /MOODAL STYLES ============== */
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 288px;
-    max-height: 630px;
+    width: 408px;
+    min-height: 584px;
     background-color: #FCFCFC;
     border-radius: 4px;
     padding: 72px 24px 24px;
@@ -816,7 +701,7 @@ span {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin-top: auto;
+    margin-top: 48px;
     margin-bottom: 16px;
 }
 
@@ -968,352 +853,4 @@ span {
     background-color: #404BBF;
 }
 
-/* ============== /MODAL STYLES MOBIL ============== */
-
-
-/* ============== TABLET HEDER STYLE ============== */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 738px;
-    }
-
-    /* ============== TABLET HEDER STYLE ============== */
-
-    .mobile-menu-open-btn {
-        display: none;
-    }
-
-    .mobile-menu-wrapper {
-        display: none;
-    }
-
-    .menu {
-        display: flex;
-    }
-
-    .menu-link {
-        position: relative;
-    }
-
-    .menu-link {
-        display: block;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .menu-tablet {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .page-navigation {
-        display: flex;
-        align-items: center;
-    }
-
-    .logo {
-        margin-right: 120px;
-    }
-
-    .connect-link {
-        color: #434455;
-        font-family: Roboto, sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        font-style: normal;
-        gap: 40px;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .menu-tablet-list {
-        display: flex;
-        gap: 40px;
-    }
-
-
-    /* ============== MOTTO TABLET ============== */
-    .size-section {
-        width: 768px;
-        height: 432px;
-        padding-top: 112px;
-        padding-bottom: 36px;
-    }
-
-    .main-title {
-        color: #ffffff;
-        text-align: center;
-        font-size: 56px;
-        font-weight: 700;
-        max-width: 500px;
-        margin-bottom: 36px;
-    }
-
-    /* ============== /MOTTO TABLET ============== */
-
-    /*============== BENEFITS TABLET ==============*/
-    .page-content {
-        gap: 24px;
-    }
-
-    .container-benefits {
-        width: calc((100% - 24px) / 2);
-    }
-
-    .benefits-title {
-        text-align: left;
-    }
-
-    .page-content li:not(:last-child) {
-        margin-bottom: 0;
-    }
-
-    /* ============== /BENEFITS TABLET ============== */
-
-    /*  ============== Our Team TABLET ============== */
-    .photo-container {
-        padding: 32px 0;
-    }
-
-    .list-container-team {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .section-team {
-        background-color: #F4F4FD;
-        padding-top: 96px;
-        padding-bottom: 96px;
-
-    }
-
-    .list-team {
-        background-color: #FFFFFF;
-        width: calc((100% - 180px) / 2);
-        border-radius: 0px 0px 4px 4px;
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 2px 1px rgba(46, 47, 66, 0.08);
-    }
-
-    .list-container-team>li:not(:last-child) {
-        margin-bottom: 0;
-    }
-
-    /*  ============== /Our Team TABLET============== */
-
-    /* ============== Portfolio ============== */
-    .list-photo {
-        width: calc((100% - 24px) / 2);
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .container-photo {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 48px;
-    }
-
-    .container-photo li:not(:last-child) {
-        margin-bottom: 0;
-    }
-
-    /* ============== /Portfolio ============== */
-
-    /* ============== Contacts ============== */
-
-    .conteiner-footer {
-        margin-left: 108px;
-    }
-
-    .logo-footer {
-        display: block;
-    }
-
-    .conteinr-footer-tablet {
-        display: flex;
-        align-items: baseline;
-        gap: 24px;
-    }
-
-    .list-footer {
-        gap: 16px;
-    }
-
-    /* ============== /Contacts ============== */
-
-    /* ============== FEEDBACK FOOTER ============== */
-
-    .feedback-footer {
-        text-align: left;
-    }
-
-    .feedback-form {
-        display: flex;
-        gap: 24px;
-    }
-
-    .feedback-footer-content {
-        margin-bottom: 0;
-    }
-
-    /* ============== /FEEDBACK FOOTER ============== */
-
-    /* ============== /MOODAL STYLES ============== */
-    .modal {
-        width: 408px;
-    }
-
-    /* ============== /MODAL STYLES ============== */
-
-}
-
-/* ============== DESCTOP HEDER STYLE ============== */
-@media screen and (min-width: 1168px) {
-    .container {
-        max-width: 1166px;
-    }
-
-    /* ============== HEADER ============== */
-
-    .menu {
-        gap: 40px;
-    }
-
-
-    .menu-link {
-        position: relative;
-    }
-
-    .menu-tablet {
-        flex-direction: row;
-    }
-
-    /* ============== /HEADER ============== */
-
-    /* ============== MOTTO ============== */
-    .size-section {
-        width: 1440px;
-        height: 600px;
-        padding-top: 188px;
-        padding-bottom: 188px;
-    }
-
-    /* ============== /MOTTO ============== */
-
-    /* ============== BENEFITS ============== */
-    .page-content {
-        gap: 24px;
-    }
-
-    .container-benefits {
-        width: calc((100% - 72px) / 4);
-    }
-
-    .benefits-title {
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 1.2;
-    }
-
-    .icons-decor {
-        width: 64px;
-        height: 64px;
-        margin: 24px 100px;
-        bottom: 0;
-        fill: #111111;
-    }
-
-    .benefits-content {
-        font-weight: 400;
-    }
-
-    /* ============== /BENEFITS ============== */
-
-    /*  ============== Our Team ============== */
-
-    .list-container-team {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
-    }
-
-    .list-team {
-        width: calc((100% - 72px) / 4);
-    }
-
-    .list-container-team {
-        padding: 0;
-    }
-
-    /*  ============== /Our Team ============== */
-
-    /* ============== Portfolio ============== */
-    .container-photo {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 48px;
-    }
-
-    .list-photo {
-        width: calc((100% - 48px) / 3);
-    }
-
-    /* ============== /Portfolio ============== */
-
-    /* ============== Contacts ============== */
-    .page-footer {
-        background: #2E2F42;
-        padding: 100px 0;
-    }
-
-    .logo-footer {
-        display: inline-block;
-        margin-bottom: 16px;
-    }
-
-    .conteiner-logo {
-        margin-right: 120px;
-    }
-
-    .conteiner-footer {
-        display: flex;
-        align-items: baseline;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* ============== /Contacts ============== */
-
-    /* ============== FEEDBACK FOOTER ============== */
-
-    .feedback-footer {
-        margin-left: 80px;
-    }
-
-    .feedback-form {
-        display: flex;
-        gap: 24px;
-    }
-
-    .feedback-foorm-imput {
-        margin-right: 24px;
-        padding: 8px 16px;
-    }
-
-    /* ============== /FEEDBACK FOOTER ============== */
-}
-
-/* ============== /DESCTOP HEDER STYLE ============== */
+/* ============== /MODAL STYLES ============== */

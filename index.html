@@ -21,7 +21,7 @@
     <div class="container page-navigation-heder">
       <nav class="page-navigation ">
         <a class="logo link" href="./index.html">Web<span>Studio</span></a>
-        <ul class="menu list">
+        <ul class="menu menu-tablet-list list">
           <li class="menu-item">
             <a class="menu-link link menu-item-decor" href="./index.html">Studio</a>
           </li>
@@ -33,8 +33,13 @@
           </li>
         </ul>
       </nav>
+      <button class="mobile-menu-open-btn" type="button">
+        <svg class="mobile-menu-open-btn-icon" width="24" height="24" aria-label="mobail menu">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
       <address class="connect">
-        <ul class="menu list">
+        <ul class="menu menu-tablet list">
           <li class="menu-item">
             <a class="connect-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
@@ -124,7 +129,7 @@
             <div class="photo-container">
               <h3 class="photo-title">Mark Guerrero</h3>
               <p class="photo-content">Product Designer</p>
-              <ul class="list social social-team">
+              <ul class="list content-social-icon social-team">
                 <li class="social-list">
                   <a href="#" class="social-list-link link">
                     <svg class="social-list-icon" width="16" height="16" aria-label="instagram logo">
@@ -162,7 +167,7 @@
             <div class="photo-container">
               <h3 class="photo-title">Tom Ford</h3>
               <p class="photo-content">Frontend Developer</p>
-              <ul class="list social social-team">
+              <ul class="list content-social-icon social-team">
                 <li class="social-list">
                   <a href="#" class="social-list-link link">
                     <svg class="social-list-icon" width="16" height="16" aria-label="instagram logo">
@@ -200,7 +205,7 @@
             <div class="photo-container">
               <h3 class="photo-title">Camila Garcia</h3>
               <p class="photo-content">Marketing</p>
-              <ul class="list social social-team">
+              <ul class="list content-social-icon social-team">
                 <li class="social-list">
                   <a href="#" class="social-list-link link">
                     <svg class="social-list-icon" width="16" height="16" aria-label="instagram logo">
@@ -238,7 +243,7 @@
             <div class="photo-container">
               <h3 class="photo-title">Daniel Wilson</h3>
               <p class="photo-content">UI Designer</p>
-              <ul class="list social social-team">
+              <ul class="list content-social-icon social-team">
                 <li class="social-list">
                   <a href="#" class="social-list-link link">
                     <svg class="social-list-icon" width="16" height="16" aria-label="instagram logo">
@@ -379,47 +384,48 @@
   <!-- Contacts -->
   <footer class="page-footer section">
     <div class="container conteiner-footer">
-      <div class="conteiner-logo">
-        <a class="logo-footer link" href="./index.html">Web<span class="logo-span">Studio</span></a>
-        <p class="content-footer">Increase the flow of customers and sales for your business with digital marketing
-          &
-          growth
-          solutions.</p>
+      <div class="conteinr-footer-tablet">
+        <div class="conteiner-logo">
+          <a class="logo-footer link" href="./index.html">Web<span class="logo-span">Studio</span></a>
+          <p class="content-footer">Increase the flow of customers and sales for your business with digital marketing
+            &
+            growth
+            solutions.</p>
+        </div>
+        <div class="footer-cocial-feedback">
+          <p class="page-social">Social media</p>
+          <ul class="list content-social-icon list-footer">
+            <li class="social-list">
+              <a href="#" class="social-list-link list-footer-link link">
+                <svg class="social-list-icon" width="24" height="24" aria-label="instagram logo">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a href="#" class="social-list-link list-footer-link link">
+                <svg class="social-list-icon" width="24" height="24" aria-label="twitter logo">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a href="#" class="social-list-link list-footer-link link">
+                <svg class="social-list-icon" width="24" height="24" aria-label="facebook logo">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a href="#" class="social-list-link list-footer-link link">
+                <svg class="social-list-icon" width="24" height="24" aria-label="linkedin logo">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-cocial-feedback">
-        <p class="page-social">Social media</p>
-        <ul class="list social list-footer">
-          <li class="social-list">
-            <a href="#" class="social-list-link list-footer-link link">
-              <svg class="social-list-icon" width="24" height="24" aria-label="instagram logo">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list">
-            <a href="#" class="social-list-link list-footer-link link">
-              <svg class="social-list-icon" width="24" height="24" aria-label="twitter logo">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list">
-            <a href="#" class="social-list-link list-footer-link link">
-              <svg class="social-list-icon" width="24" height="24" aria-label="facebook logo">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list">
-            <a href="#" class="social-list-link list-footer-link link">
-              <svg class="social-list-icon" width="24" height="24" aria-label="linkedin logo">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-
       <div class="feedback-footer">
         <p class="feedback-footer-content">Subscribe</p>
         <form class="feedback-form">
@@ -439,19 +445,17 @@
   </footer>
 
   <!--BACKDROP -->
-  <div class="backdrop is-open">
+  <!--Opening by adding a class="is-open-->
+  <div class="backdrop">
     <div class="modal">
       <button class="modal-close-btn" type="button">
         <svg class="modal-close-btn-icon" aria-label=" close modal icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-
-
       <p class="review-form-description">
         Leave your contacts and we will call you back
       </p>
-
       <form class="review-form">
         <div class="review-form-field-wrapper">
           <label class="review-form-field-label" for="user-name">Name</label>
@@ -507,6 +511,71 @@
 
       </form>
     </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <!--Opening by adding a class="is-open-->
+  <div class="mobile-menu-wrapper">
+    <div class="conteiner mobile-menu-conteiner">
+      <button class="mobile-menu-close-btn" type="button">
+        <svg class="modal-close-btn-icon" aria-label=" close modal icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-navigation">
+        <ul class="mobile-menu list">
+          <li class="mobil-menu-item"><a class="mobile-menu-link link" href=""> Studio</a></li>
+          <li class="mobil-menu-item"><a class="mobile-menu-link link" href="">Portfolio</a></li>
+          <li class="mobil-menu-item"><a class="mobile-menu-link link" href="">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="conteiner-mobile-connect">
+      <address class="connect">
+        <ul class="mobile-connect list">
+          <li class="mobile-menu-item">
+            <a class="mobile-connect-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="menu-item">
+            <a class="mobile-connect-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </address>
+      <div class="mobil-social-list">
+        <ul class="list menu-social list-footer">
+          <li class="social-list">
+            <a href="#" class="social-list-link list-footer-link link">
+              <svg class="social-list-icon" width="24" height="24" aria-label="instagram logo">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list">
+            <a href="#" class="social-list-link list-footer-link link">
+              <svg class="social-list-icon" width="24" height="24" aria-label="twitter logo">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list">
+            <a href="#" class="social-list-link list-footer-link link">
+              <svg class="social-list-icon" width="24" height="24" aria-label="facebook logo">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list">
+            <a href="#" class="social-list-link list-footer-link link">
+              <svg class="social-list-icon" width="24" height="24" aria-label="linkedin logo">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
   </div>
 </body>
 
