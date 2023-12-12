@@ -57,7 +57,7 @@ body {
 }
 
 .container {
-    max-width: 318px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
@@ -68,6 +68,20 @@ body {
 /* ============== HEDER STYLE ============== */
 .menu {
     display: none;
+}
+
+.size-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)),
+        url(../images/baskground/people-office-mobil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-navigation-heder {
@@ -169,7 +183,6 @@ span {
 
     .size-section {
         max-width: 320px;
-        height: 432px;
     }
 
     .page-heder {
@@ -294,25 +307,14 @@ span {
         margin-bottom: 72px;
     }
 
-
+    .container-team {
+        width: 296px;
+    }
 }
 
 /* ============== /MOBILE HEDER STYLE ============== */
 
 /* ============== MOTTO ============== */
-.size-section {
-    padding-top: 72px;
-    padding-bottom: 188px;
-    background: #2E2F42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
-            rgba(46, 47, 66, 0.70)),
-        url(../images/baskground/people-office-mobil.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 @media screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx),
@@ -374,7 +376,6 @@ screen and (min-device-pixel-ratio: 2) {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 8px;
-    margin-top: 8px;
 }
 
 .container-icons-decor {
@@ -983,7 +984,7 @@ screen and (min-device-pixel-ratio: 2) {
 /* ============== TABLET HEDER STYLE ============== */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 738px;
+        max-width: 768px;
     }
 
     /* ============== TABLET HEDER STYLE ============== */
@@ -1134,6 +1135,10 @@ screen and (min-device-pixel-ratio: 2) {
         margin-bottom: 0;
     }
 
+    .menu-tablet {
+        gap: 12px;
+    }
+
     /*  ============== /Our Team TABLET============== */
 
     /* ============== Portfolio ============== */
@@ -1158,11 +1163,19 @@ screen and (min-device-pixel-ratio: 2) {
     /* ============== Contacts ============== */
 
     .conteiner-footer {
-        margin-left: 108px;
+        max-width: 584px;
     }
 
     .logo-footer {
         display: block;
+    }
+
+    .conteiner-logo {
+        margin-bottom: 0;
+    }
+
+    .footer-cocial-feedback {
+        margin-bottom: 0;
     }
 
     .page-social {
@@ -1213,6 +1226,11 @@ screen and (min-device-pixel-ratio: 2) {
         max-width: 1166px;
     }
 
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     /* ============== HEADER ============== */
 
     .menu {
@@ -1252,8 +1270,7 @@ screen and (min-device-pixel-ratio: 2) {
     }
 
     .size-section {
-        width: 1440px;
-        height: 600px;
+        max-width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
     }
@@ -1350,6 +1367,11 @@ screen and (min-device-pixel-ratio: 2) {
     /* ============== /Portfolio ============== */
 
     /* ============== Contacts ============== */
+
+    .conteiner-footer {
+        max-width: 1440px;
+    }
+
     .page-footer {
         background: #2E2F42;
         padding: 100px 0;
