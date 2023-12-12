@@ -179,6 +179,8 @@ span {
 
     /*====== MOBIL MENU ======*/
     .mobile-menu-wrapper {
+        display: flex;
+        flex-direction: column;
         position: fixed;
         top: 0;
         left: 0;
@@ -240,9 +242,11 @@ span {
         padding-top: 72px;
         padding-right: 153px;
         padding-left: 16px;
-        padding-bottom: 168px;
     }
 
+    .conteiner-mobile-connect {
+        margin-top: auto;
+    }
 
     .mobile-menu li:not(:last-child) {
         margin-bottom: 40px;
@@ -281,6 +285,16 @@ span {
     .mobile-connect-link:focus {
         color: #4D5AE5;
     }
+
+    .page-content li:not(:last-child) {
+        margin-bottom: 72px;
+    }
+
+    .list-container-team>li:not(:last-child) {
+        margin-bottom: 72px;
+    }
+
+
 }
 
 /* ============== /MOBILE HEDER STYLE ============== */
@@ -292,12 +306,23 @@ span {
     background: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70),
             rgba(46, 47, 66, 0.70)),
-        url(../images/baskground/people-office.jpg);
+        url(../images/baskground/people-office-mobil.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-device-pixel-ratio: 2) {
+    .size-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+                rgba(46, 47, 66, 0.70)),
+            url(../images/baskground/people-office-mobil@x2.jpg);
+    }
+
 }
 
 .main-title {
@@ -336,10 +361,6 @@ span {
     flex-wrap: wrap;
 }
 
-.page-content li:not(:last-child) {
-    margin-bottom: 72px;
-}
-
 .title-section-benefits {
     padding: 96px 0;
 }
@@ -357,25 +378,7 @@ span {
 }
 
 .container-icons-decor {
-    display: flex;
-    width: 264px;
-    height: 112px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
-    background-color: #f4f4fd;
-    margin-bottom: 8px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.icons-decor {
-    width: 64px;
-    height: 64px;
-    margin: 24px 100px;
-    bottom: 0;
-    fill: #111111;
+    display: none;
 }
 
 .benefits-content {
@@ -434,10 +437,6 @@ span {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-}
-
-.list-container-team>li:not(:last-child) {
-    margin-bottom: 72px;
 }
 
 .social-list {
@@ -544,6 +543,10 @@ span {
     padding: 96px 0;
 }
 
+.conteiner-logo {
+    margin-bottom: 72px;
+}
+
 .logo-footer {
     display: flex;
     justify-content: center;
@@ -566,7 +569,6 @@ span {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    margin-bottom: 72px;
 }
 
 .logo-span {
@@ -805,6 +807,10 @@ span {
     border: none;
 }
 
+.mobil-menu-span {
+    color: #404BBF;
+}
+
 .modal-close-btn-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -936,6 +942,9 @@ span {
 }
 
 .review-form-checkbox-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
@@ -1022,9 +1031,7 @@ span {
     }
 
     .connect-link {
-        color: #434455;
-        font-family: Roboto, sans-serif;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -1040,11 +1047,27 @@ span {
 
 
     /* ============== MOTTO TABLET ============== */
+
     .size-section {
-        width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+                rgba(46, 47, 66, 0.70)),
+            url(../images/baskground/people-office-tablet.jpg);
+    }
+
+    @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+        .size-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+                    rgba(46, 47, 66, 0.70)),
+                url(../images/baskground/people-office-tablet@x2.jpg);
+        }
+    }
+
+    .size-section {
         height: 432px;
         padding-top: 112px;
-        padding-bottom: 36px;
+        padding-bottom: 112px;
     }
 
     .main-title {
@@ -1060,7 +1083,7 @@ span {
 
     /*============== BENEFITS TABLET ==============*/
     .page-content {
-        gap: 24px;
+        gap: 72px 24px;
     }
 
     .container-benefits {
@@ -1071,8 +1094,9 @@ span {
         text-align: left;
     }
 
-    .page-content li:not(:last-child) {
-        margin-bottom: 0;
+
+    .container-icons-decor {
+        display: none;
     }
 
     /* ============== /BENEFITS TABLET ============== */
@@ -1085,7 +1109,7 @@ span {
     .list-container-team {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 64px 24px;
         justify-content: center;
         align-items: center;
     }
@@ -1141,6 +1165,10 @@ span {
         display: block;
     }
 
+    .page-social {
+        text-align: left;
+    }
+
     .conteinr-footer-tablet {
         display: flex;
         align-items: baseline;
@@ -1180,7 +1208,7 @@ span {
 }
 
 /* ============== DESCTOP HEDER STYLE ============== */
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
     .container {
         max-width: 1166px;
     }
@@ -1191,7 +1219,6 @@ span {
         gap: 40px;
     }
 
-
     .menu-link {
         position: relative;
     }
@@ -1200,9 +1227,30 @@ span {
         flex-direction: row;
     }
 
+    .connect-link {
+        font-size: 16px;
+    }
+
     /* ============== /HEADER ============== */
 
     /* ============== MOTTO ============== */
+
+    .size-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+                rgba(46, 47, 66, 0.70)),
+            url(../images/baskground/people-office.jpg);
+    }
+
+    @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+        .size-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+                    rgba(46, 47, 66, 0.70)),
+                url(../images/baskground/people-office@x2.jpg);
+        }
+    }
+
     .size-section {
         width: 1440px;
         height: 600px;
@@ -1213,6 +1261,11 @@ span {
     /* ============== /MOTTO ============== */
 
     /* ============== BENEFITS ============== */
+
+    .title-section-benefits {
+        padding: 120px 0;
+    }
+
     .page-content {
         gap: 24px;
     }
@@ -1225,6 +1278,20 @@ span {
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
+    }
+
+    .container-icons-decor {
+        display: flex;
+        width: 264px;
+        height: 112px;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4fd;
+        margin-bottom: 8px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .icons-decor {
@@ -1243,6 +1310,10 @@ span {
 
     /*  ============== Our Team ============== */
 
+    .section-team {
+        padding: 120px 0;
+    }
+
     .list-container-team {
         display: flex;
         flex-wrap: wrap;
@@ -1260,6 +1331,11 @@ span {
     /*  ============== /Our Team ============== */
 
     /* ============== Portfolio ============== */
+
+    .portfolio-section {
+        padding: 96px 0;
+    }
+
     .container-photo {
         display: flex;
         flex-wrap: wrap;
@@ -1295,6 +1371,14 @@ span {
         margin-right: auto;
     }
 
+    .page-social {
+        margin-bottom: 0;
+    }
+
+    .conteinr-footer-tablet {
+        gap: 0;
+    }
+
     /* ============== /Contacts ============== */
 
     /* ============== FEEDBACK FOOTER ============== */
@@ -1309,7 +1393,6 @@ span {
     }
 
     .feedback-foorm-imput {
-        margin-right: 24px;
         padding: 8px 16px;
     }
 
